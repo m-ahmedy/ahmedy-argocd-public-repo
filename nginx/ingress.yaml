@@ -5,6 +5,7 @@ metadata:
   name: nginx-ingress
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"  # Disable HTTPS redirect for localhost
 spec:
   ingressClassName: nginx
   rules:
